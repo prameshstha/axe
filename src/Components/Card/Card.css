@@ -1,0 +1,38 @@
+.main__div{
+  background-color: #f6f7f7;
+}
+.cards {
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+}
+.image{
+  height: 15rem;
+  width: 15rem;
+}
+.product_details{
+  text-align: left;
+}
+.post__per__page{
+  border: none;
+  background: none;
+}
+  .post__per__page:after {
+    box-shadow: none;
+    border: none;
+}
+.product_description{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1000px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1200px) {
+  .cards { grid-template-columns: repeat(4, 1fr); }
+}
